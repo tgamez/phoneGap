@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PhoneGap Test</title>
+</head>
+<body>
+ <button id="elboton">Do it</button>
+ <button id="clear">Clear</button>
+ <div id="results"></div>
+<script src="js/zepto.js"></script>
+<script src="js/utils.js"></script>
+<script type="text/javascript">
+	$('#elboton').click(function () {
+		UTILS.DoIt($('#results'));
+	});
+	$('#clear').click(function () {
+		$('#results').html('');
+	});
+
+</script>
+</body>
+</html>
